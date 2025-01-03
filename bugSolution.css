@@ -1,0 +1,30 @@
+/* Correcting calc() issues */
+
+/* Ensure units are consistent */
+.correct-calc-units {
+  width: calc(100% - 10px);
+}
+
+/* Add spaces around operators */
+.correct-calc-spaces {
+  width: calc(100% - 10px);
+}
+
+/* Handle cases where parent element width is not defined. */
+.container {
+  width: 500px; /* Ensure a defined width */
+}
+
+.correct-calc-defined-parent {
+  width: calc(50% - 10px);
+}
+
+/* Use explicit units for all values in calc() */
+.correct-calc-explicit-units {
+  width: calc(100vw - 10px);
+}
+
+/* Use parenthesis for complex expressions */
+.correct-calc-complex {
+  width: calc((100% - 10px) / 2);
+} 
